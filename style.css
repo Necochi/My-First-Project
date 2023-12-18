@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    /* margin-left: 0.4em; */
-    /* margin-right: 0.4em; */
+    margin-left: auto; 
+    margin-right: auto;
     font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 0.07rem;
     overflow: hidden;
     overflow-y: scroll;
+
+    max-width: 1800px;
 
     color:#212A2F;
     
@@ -41,10 +43,10 @@ button {
 
 .menu {
     /* border: 2px solid red; */
-    position: sticky;
     width: 100%;
     height: 3.75em;
-    margin-left: 1em;
+    margin-left: auto;
+    margin-right: auto;
 
     display: flex;
     align-items: center;
@@ -68,6 +70,7 @@ button {
     width: 20em;
     justify-content: space-between;
     align-items: center;
+    margin: 1em;
 }
 
 .menu-left>a {
@@ -94,6 +97,11 @@ button {
     width: 100%;
 }
 
+.menu-logo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Это блок с двумя другими блоками: иконками и другими
 ссылками, которые находятся слева. Так, как они находятся
 на разном расстоянии, то пришлось запихнуть их в ещё
@@ -103,6 +111,8 @@ button {
 .menu-deep-right {
     display: flex;
     justify-content: space-evenly;
+    margin-right: -1em;
+    margin-left: 0;
 
     width: 30em;
 }
@@ -153,11 +163,11 @@ button {
 .menu-icons {
     /* background-color: red; */
     margin-top: 0.3em;
-    width: 10em;
+    width: 8em;
 
     display: flex;
     justify-content: flex-end;
-    gap: 0.5em;
+    gap: -0.5em;
 }
 
 .intro {
@@ -185,6 +195,7 @@ button {
 .inside-intro {
     padding-top: 29em;
     padding-left: 3em;
+    margin-left: 1em;
     
 }
 
@@ -208,8 +219,9 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 0;
 
-    width: 30em;
+    width: 38em;
 
     font-size: 0.8em;
     font-weight: 700;
@@ -275,7 +287,8 @@ button {
     margin-top: 2em;
 
     /* background-color: #a6c9db; */
-    width: 80em;
+    width: 84em;
+    height: 50em;
 
     margin-left: auto;
     margin-right: auto;
@@ -304,7 +317,7 @@ button {
     height: 2em;
     display: flex;
     justify-content: space-around;
-    gap: 0.5em;
+    gap: 3em;
 }
 
 .block-names-list a {
@@ -339,7 +352,7 @@ button {
 
 .cards {
 
-    height: 33rem;
+    height: max-content;
 
     margin-top: 1.8em;
 
@@ -364,9 +377,13 @@ button {
     background-color: rgb(226, 226, 226);
 }
 
+.card1-block {
+    margin-left: 0;
+}
+
 .card1 {
-    width: 25em;
-    height: 25em;
+    width: 27em;
+    height: 27em;
     background-image: url(/img/card1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -376,26 +393,27 @@ button {
 }
 
 .card1-text {
-
-    width: 336px;
+    width: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 0 0 3em;
-
+    margin: 0;
 }
 
 .card1-text>p {
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 0.5em;
+    margin-left: 2em;
 }
 
 .line1 {
     background-color: #D3D4D5;
+    border-style: none;
     height: 2px;
-    width: 100%;
-    padding-top: -2px;
+    align-self: center;
+    width: 85%;
+    margin: 0;
 }
 
 .icon-text1 {
@@ -403,6 +421,7 @@ button {
     flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 1em;
+    margin-left: 2.5em;
 }
 
 .icon-text1 img {
@@ -424,8 +443,8 @@ button {
 } */
 
 .card2 {
-    width: 25em;
-    height: 25em;
+    width: 27em;
+    height: 27em;
     background-image: url(/img/card2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -435,26 +454,27 @@ button {
 }
 
 .card2-text {
-
-    width: 336px;
+    width: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 0 0 3em;
-
+    margin: 0;
 }
 
 .card2-text>p {
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 0.5em;
+    margin-left: 2em;
 }
 
 .line2 {
     background-color: #D3D4D5;
+    border-style: none;
     height: 2px;
-    width: 100%;
-    padding-top: -2px;
+    align-self: center;
+    width: 85%;
+    margin: 0;
 }
 
 .icon-text2 {
@@ -462,15 +482,20 @@ button {
     flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 1em;
+    margin-left: 2.5em;
 }
 
 .icon-text2 img {
     width: 40px;
 }
 
+.card3-block {
+    margin-right: 0;
+}
+
 .card3 {
-    width: 25em;
-    height: 25em;
+    width: 27em;
+    height: 27em;
     background-image: url(/img/card3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -480,26 +505,27 @@ button {
 }
 
 .card3-text {
-
-    width: 336px;
+    width: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 0 0 3em;
-
+    margin: 0;
 }
 
 .card3-text>p {
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 0.5em;
+    margin-left: 2em;
 }
 
 .line3 {
     background-color: #D3D4D5;
+    border-style: none;
     height: 2px;
-    width: 100%;
-    padding-top: -2px;
+    align-self: center;
+    width: 85%;
+    margin: 0;
 }
 
 .icon-text3 {
@@ -507,8 +533,109 @@ button {
     flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 1em;
+    margin-left: 2.5em;
 }
 
 .icon-text3 img {
     width: 40px;
+}
+
+
+
+.block3 {
+    height: 63em;
+}
+
+.block3-image {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.block3-image>img {
+    width: 100%;
+}
+
+.block3-text {
+    text-align: center;
+}
+
+.block3-text>h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+}
+
+.block3-text>p {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.block3-buttons {
+    display: flex;
+    width: 30%;
+    height: max-content;
+    justify-content: center;
+    margin-top: 1.5em;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.block3-buttons>a {
+    height: 3.5em;
+    width: 13em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #212A2F;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.block3-buttons>a:hover {
+    font-size: 18px;
+    color: #212A2F;
+    background-color: #bdbdbd;
+}
+
+.block4 {
+    width: 84em;
+}
+
+.block4>h2 {
+    font-size: 2em;
+}
+
+.block4-imgs {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.block4-img {
+    width: 40%;
+    margin: 0;
+}
+
+.block4-img img {
+    width: 95%;
+    transform: scale(1);
+    margin: 10px 10px;
+    transition: 0.2s;
+}
+
+.block4-img img:hover {
+    transform: scale(1.05);
+}
+
+.block4-text {
+    width: 90%;
+    margin-left: 1em;
+}
+
+.block4-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin-top: 0.8em;
 }
