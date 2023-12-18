@@ -4,7 +4,7 @@ Hope you'll be here watching me develop!
 
 Here I'll tell you a history of me updating this project.
 
-------------------------------------------------------
+----------------------------------------------
 
 18.12.2023: Fixed some moments like <hr> instead of <div> for the line. Added two blocks of web page
 
